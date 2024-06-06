@@ -1,7 +1,7 @@
 "use client"
 
 import { ApiCalls } from "@/utils/calls"
-import { useState } from "react"
+import React ,{ useState } from "react"
 
 export const Form = ({setList}:{setList:React.SetStateAction<any>}) => {
     const [loading, setLoading] = useState(false)
@@ -39,7 +39,7 @@ export const Form = ({setList}:{setList:React.SetStateAction<any>}) => {
                         <option value="starships">Starships</option>
                     </select>
                 </div>
-                <button type="submit" className="w-full px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Get List</button>
+                <button id='submit' type="submit" className="w-full px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">Get List</button>
             </form>
             {errorMessage && <div className="text-center text-red-500">{errorMessage}</div>}
             {loading && <div className="text-center">Loading...</div>}
