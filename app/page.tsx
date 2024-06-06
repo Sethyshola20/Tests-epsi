@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Form } from "./components/Form";
+import Calculator from './components/Calculator';
 
 export default function Home() {
   const [list, setList] = useState([])
@@ -13,6 +14,8 @@ export default function Home() {
           <li key={index}>{item.name}</li>
         ))}
       </ul>
+      <br />
+      <Calculator />
     </main>
   );
 }
