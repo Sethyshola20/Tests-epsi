@@ -19,7 +19,7 @@ export class ApiCalls {
                 }
                 const data = await response.json()
                 allResults = allResults.concat(data.results)
-                url = data.next // This will be null if there are no more pages
+                url = data.next 
             }
 
             return allResults
