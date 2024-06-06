@@ -6,7 +6,7 @@ import { useState } from "react"
 export const Form = ({setList}:{setList:React.SetStateAction<any>}) => {
     const [loading, setLoading] = useState(false)
     const [errorMessage, setErrorMessage] = useState('')
-    
+
 
     async function handleSubmit(e:React.FormEvent<HTMLFormElement>){
         e.preventDefault()
