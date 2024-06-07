@@ -17,4 +17,6 @@ jobs:
       with:
         node-version: '16'
     - run: npm install
+    - run: npm run dev
+    - run: npx cypress run
     - run: npm test -- --watchAll=false
