@@ -24,7 +24,7 @@ const Calculator: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen bg-gray-100">
+    <div className="flex justify-center flex-row bg-gray-100">
       <div className="bg-white p-8 rounded shadow-lg w-80">
         <div className="mb-4">
           <input

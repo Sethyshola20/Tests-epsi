@@ -40,7 +40,7 @@ describe('ApiCalls', () => {
     }).as('getUnknown');
 
     const result = await ApiCalls.getList('unknown');
-    expect(result).to.deep.equal({ error: 'NOT FOUND' });
+    expect(result).to.deep.equal({ error: 'Not Found' });
 
     cy.wait('@getUnknown').then((interception) => {
       expect(interception.request.method).to.eq('GET');

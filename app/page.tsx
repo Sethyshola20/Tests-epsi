@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Form setList={setList}/>
-      <ul>
+      <ul className="grid grid-cols-4 gap-4 mt-4">
         {list.map((item:any, index:number) => (
-          <li key={index}>{item.name}</li>
+          <li className="bg-gray-300 p-4 rounded" key={index}>{item.name}</li>
         ))}
       </ul>
       <br />

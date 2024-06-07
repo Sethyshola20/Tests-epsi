@@ -13,7 +13,24 @@ Ouvrez l'adresse [http://localhost:3000](http://localhost:3000) avec votre navig
 
 ## Tests
 
-Afin de lancer les tests, utilisez la commandes suivante :
+# API Star Wars
+
+Afin de lancer les tests relatifs à l'API Star Wars, utilisez la commandes suivante :
+
+```bash
+npx cypress run
+```
+
+Le serveur de développement doit tourner lors de ces tests. Pour rappel :
+
+```bash
+npm run dev
+```
+
+
+# Calculatrice
+
+Afin de lancer les tests relatifs à la calculatrice, utilisez la commandes suivante :
 
 ```bash
 npm run dev
